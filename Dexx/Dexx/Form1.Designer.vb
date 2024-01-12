@@ -39,6 +39,7 @@ Partial Class Form1
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.LoadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
@@ -144,7 +145,7 @@ Partial Class Form1
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.SaveToolStripMenuItem, Me.CloseToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.SaveToolStripMenuItem, Me.CloseToolStripMenuItem, Me.LoadToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
         Me.FileToolStripMenuItem.Text = "File"
@@ -152,24 +153,30 @@ Partial Class Form1
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(128, 26)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.NewToolStripMenuItem.Text = "New"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(128, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'CloseToolStripMenuItem
         '
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(128, 26)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'LoadToolStripMenuItem
+        '
+        Me.LoadToolStripMenuItem.Name = "LoadToolStripMenuItem"
+        Me.LoadToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.LoadToolStripMenuItem.Text = "Load"
         '
         'Form1
         '
@@ -216,4 +223,5 @@ Partial Class Form1
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents LoadToolStripMenuItem As ToolStripMenuItem
 End Class
