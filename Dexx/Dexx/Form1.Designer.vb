@@ -37,7 +37,6 @@ Partial Class Form1
         Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.LoadToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.MenuStrip1.SuspendLayout()
@@ -101,9 +100,9 @@ Partial Class Form1
         Me.Label3.AutoSize = True
         Me.Label3.Location = New System.Drawing.Point(92, 272)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(88, 20)
+        Me.Label3.Size = New System.Drawing.Size(102, 20)
         Me.Label3.TabIndex = 7
-        Me.Label3.Text = "Level of Fun"
+        Me.Label3.Text = "Entertainment"
         '
         'Label4
         '
@@ -126,9 +125,10 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.PictureBox1.Location = New System.Drawing.Point(628, 282)
+        Me.PictureBox1.Location = New System.Drawing.Point(552, 136)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(125, 62)
+        Me.PictureBox1.Size = New System.Drawing.Size(201, 208)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
         Me.PictureBox1.TabIndex = 10
         Me.PictureBox1.TabStop = False
         '
@@ -144,7 +144,7 @@ Partial Class Form1
         '
         'FileToolStripMenuItem
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.SaveToolStripMenuItem, Me.LoadToolStripMenuItem})
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.SaveToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
         Me.FileToolStripMenuItem.Size = New System.Drawing.Size(46, 24)
         Me.FileToolStripMenuItem.Text = "File"
@@ -160,12 +160,6 @@ Partial Class Form1
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
         Me.SaveToolStripMenuItem.Text = "Save"
-        '
-        'LoadToolStripMenuItem
-        '
-        Me.LoadToolStripMenuItem.Name = "LoadToolStripMenuItem"
-        Me.LoadToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.LoadToolStripMenuItem.Text = "Load"
         '
         'OpenFileDialog1
         '
@@ -216,5 +210,4 @@ Partial Class Form1
     Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents CloseToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents LoadToolStripMenuItem As ToolStripMenuItem
 End Class
