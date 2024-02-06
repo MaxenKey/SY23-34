@@ -22,86 +22,61 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.BackgroundWorker1 = New System.ComponentModel.BackgroundWorker()
+        Me.BackgroundWorker2 = New System.ComponentModel.BackgroundWorker()
+        Me.BackgroundWorker3 = New System.ComponentModel.BackgroundWorker()
+        Me.Clickercontrol4 = New Feb5.clickercontrol()
+        Me.Clickercontrol5 = New Feb5.clickercontrol()
+        Me.Clickercontrol6 = New Feb5.clickercontrol()
         Me.SuspendLayout()
         '
-        'Button1
+        'Clickercontrol4
         '
-        Me.Button1.Location = New System.Drawing.Point(344, 39)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(94, 29)
-        Me.Button1.TabIndex = 0
-        Me.Button1.Text = "Click"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.Clickercontrol4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.Clickercontrol4.increment = 1
+        Me.Clickercontrol4.Location = New System.Drawing.Point(67, 12)
+        Me.Clickercontrol4.Name = "Clickercontrol4"
+        Me.Clickercontrol4.Size = New System.Drawing.Size(153, 125)
+        Me.Clickercontrol4.TabIndex = 0
         '
-        'Button2
+        'Clickercontrol5
         '
-        Me.Button2.Location = New System.Drawing.Point(344, 74)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(94, 29)
-        Me.Button2.TabIndex = 1
-        Me.Button2.Text = "Reset"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.Clickercontrol5.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Clickercontrol5.increment = 1
+        Me.Clickercontrol5.Location = New System.Drawing.Point(211, 193)
+        Me.Clickercontrol5.Name = "Clickercontrol5"
+        Me.Clickercontrol5.Size = New System.Drawing.Size(146, 125)
+        Me.Clickercontrol5.TabIndex = 1
         '
-        'TextBox1
+        'Clickercontrol6
         '
-        Me.TextBox1.Location = New System.Drawing.Point(344, 113)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox1.TabIndex = 2
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(546, 113)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(125, 27)
-        Me.TextBox2.TabIndex = 3
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(546, 39)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(94, 29)
-        Me.Button3.TabIndex = 4
-        Me.Button3.Text = "Click"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(546, 74)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(94, 29)
-        Me.Button4.TabIndex = 5
-        Me.Button4.Text = "Reset"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Clickercontrol6.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.Clickercontrol6.increment = 1
+        Me.Clickercontrol6.Location = New System.Drawing.Point(368, 12)
+        Me.Clickercontrol6.Name = "Clickercontrol6"
+        Me.Clickercontrol6.Size = New System.Drawing.Size(172, 125)
+        Me.Clickercontrol6.TabIndex = 2
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
-        Me.Controls.Add(Me.Button4)
-        Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Clickercontrol6)
+        Me.Controls.Add(Me.Clickercontrol5)
+        Me.Controls.Add(Me.Clickercontrol4)
         Me.Name = "Form1"
         Me.Text = "Form1"
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button4 As Button
+    Friend WithEvents Clickercontrol1 As clickercontrol
+    Friend WithEvents Clickercontrol2 As clickercontrol
+    Friend WithEvents Clickercontrol3 As clickercontrol
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents BackgroundWorker2 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents BackgroundWorker3 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents Clickercontrol4 As clickercontrol
+    Friend WithEvents Clickercontrol5 As clickercontrol
+    Friend WithEvents Clickercontrol6 As clickercontrol
 End Class
