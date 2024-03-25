@@ -23,6 +23,10 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
+<<<<<<< HEAD
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+=======
         Me.StoneBoard = New System.Windows.Forms.PictureBox()
         Me.NewspaperBoard = New System.Windows.Forms.PictureBox()
         Me.IceBoard = New System.Windows.Forms.PictureBox()
@@ -35,11 +39,37 @@ Partial Class Form1
         CType(Me.SkyBoard, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.DefaultBoard, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
+>>>>>>> main
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+<<<<<<< HEAD
+        Me.Label1.Location = New System.Drawing.Point(420, 161)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(53, 20)
+        Me.Label1.TabIndex = 0
+        Me.Label1.Text = "Label1"
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(229, 135)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(94, 29)
+        Me.Button1.TabIndex = 1
+        Me.Button1.Text = "Button1"
+        Me.Button1.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(420, 191)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(53, 20)
+        Me.Label2.TabIndex = 2
+        Me.Label2.Text = "Label2"
+=======
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
         Me.Label1.Location = New System.Drawing.Point(318, 71)
         Me.Label1.Name = "Label1"
@@ -102,12 +132,20 @@ Partial Class Form1
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(150, 27)
         Me.NumericUpDown1.TabIndex = 6
+>>>>>>> main
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+<<<<<<< HEAD
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.Label1)
+        Me.Name = "Form1"
+        Me.Text = "Form1"
+=======
         Me.Controls.Add(Me.NumericUpDown1)
         Me.Controls.Add(Me.DefaultBoard)
         Me.Controls.Add(Me.SkyBoard)
@@ -123,16 +161,22 @@ Partial Class Form1
         CType(Me.SkyBoard, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.DefaultBoard, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
+>>>>>>> main
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
 
     Friend WithEvents Label1 As Label
+<<<<<<< HEAD
+    Friend WithEvents Button1 As Button
+    Friend WithEvents Label2 As Label
+=======
     Friend WithEvents StoneBoard As PictureBox
     Friend WithEvents NewspaperBoard As PictureBox
     Friend WithEvents IceBoard As PictureBox
     Friend WithEvents SkyBoard As PictureBox
     Friend WithEvents DefaultBoard As PictureBox
     Friend WithEvents NumericUpDown1 As NumericUpDown
+>>>>>>> main
 End Class
