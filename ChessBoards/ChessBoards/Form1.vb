@@ -1,6 +1,11 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 ﻿Imports System.Reflection.Emit
+=======
+﻿Imports System.Reflection.Emit
+=======
+>>>>>>> main
 >>>>>>> main
 
 
@@ -15,10 +20,17 @@ Public Class x
 
 ﻿Public Class Form1
 <<<<<<< HEAD
+<<<<<<< HEAD
     Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
 
 =======
 Private Sub x_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+=======
+Private Sub x_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+=======
+    Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
+
+>>>>>>> main
 >>>>>>> main
 
     End Sub
