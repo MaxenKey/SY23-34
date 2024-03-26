@@ -1,19 +1,24 @@
-<<<<<<< HEAD
 ﻿Imports System.Reflection.Emit
-Imports System.Windows
 
-Public Class Form1
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+
+Public Class x
+    Private Sub Button1_Click(sender As Object, e As EventArgs)
         Me.Hide()
         Dim f2 As New Form2
         f2.ShowDialog()
-        Label2.Text = f2.NumericUpDown1.Value
+
         Me.Show()
     End Sub
-=======
+
 ﻿Public Class Form1
-    Private Sub NumericUpDown1_ValueChanged(sender As Object, e As EventArgs) Handles NumericUpDown1.ValueChanged
->>>>>>> main
+Private Sub x_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
     End Sub
+
+    Private Sub NextButton_Click(sender As Object, e As EventArgs) Handles NextButton.Click
+        Dim form2 As New Form2
+        form2.Show()
+        Me.Hide()
+    End Sub
+
 End Class
