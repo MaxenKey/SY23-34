@@ -24,6 +24,7 @@ Partial Class x
     Private Sub InitializeComponent()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.NextButton = New System.Windows.Forms.Button()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -44,17 +45,29 @@ Partial Class x
         Me.NextButton.Text = "Next"
         Me.NextButton.UseVisualStyleBackColor = True
         '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.Location = New System.Drawing.Point(501, 165)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(103, 24)
+        Me.CheckBox1.TabIndex = 2
+        Me.CheckBox1.Text = "CheckBox1"
+        Me.CheckBox1.UseVisualStyleBackColor = True
+        '
         'x
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.NextButton)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "x"
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
+        Me.PerformLayout()
 
     End Sub
 
@@ -67,4 +80,5 @@ Partial Class x
     Friend WithEvents DefaultBoard As PictureBox
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents NextButton As Button
+    Friend WithEvents CheckBox1 As CheckBox
 End Class
