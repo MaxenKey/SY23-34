@@ -25,6 +25,7 @@ Partial Class x
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.NextButton = New System.Windows.Forms.Button()
         Me.CheckBox1 = New System.Windows.Forms.CheckBox()
+        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -55,11 +56,20 @@ Partial Class x
         Me.CheckBox1.Text = "CheckBox1"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
+        'CheckedListBox1
+        '
+        Me.CheckedListBox1.FormattingEnabled = True
+        Me.CheckedListBox1.Location = New System.Drawing.Point(316, 324)
+        Me.CheckedListBox1.Name = "CheckedListBox1"
+        Me.CheckedListBox1.Size = New System.Drawing.Size(150, 114)
+        Me.CheckedListBox1.TabIndex = 3
+        '
         'x
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.CheckedListBox1)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.NextButton)
         Me.Controls.Add(Me.PictureBox1)
@@ -81,4 +91,5 @@ Partial Class x
     Friend WithEvents NumericUpDown1 As NumericUpDown
     Friend WithEvents NextButton As Button
     Friend WithEvents CheckBox1 As CheckBox
+    Friend WithEvents CheckedListBox1 As CheckedListBox
 End Class
