@@ -1,0 +1,27 @@
+﻿<Window x:Class="MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Content="USD" Margin="178,90,565,320"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Margin="169,119,502,294" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Euros" Margin="205,211,538,199"/>
+        <Label Content="CAD" Margin="313,211,430,199"/>
+        <Label Content="Yen" Margin="410,211,333,199"/>
+        <Label x:Name="PesosText" Content="Pesos" Margin="502,211,241,199"/>
+        <Label Content="Rand" Margin="627,211,116,199"/>
+        <Label Content="Pounds" Margin="84,211,659,199"/>
+        <TextBox x:Name="PoundsText" TextWrapping="Wrap" Text="TextBox" Margin="67,240,642,173" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="USDText" TextWrapping="Wrap" Text="TextBox" Margin="169,119,502,294" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="EurosText" TextWrapping="Wrap" Text="TextBox" Margin="188,240,521,173" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="CADText" TextWrapping="Wrap" Text="TextBox" Margin="296,240,413,173" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="YenText" TextWrapping="Wrap" Text="TextBox" Margin="400,240,309,173" TextChanged="TextBox_TextChanged"/>
+        <TextBox TextWrapping="Wrap" Text="TextBox" Margin="502,240,207,173" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="RandText" TextWrapping="Wrap" Text="TextBox" Margin="610,240,99,173" TextChanged="TextBox_TextChanged"/>
+
+    </Grid>
+</Window>

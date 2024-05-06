@@ -1,0 +1,33 @@
+﻿<Window x:Class="CurrencyConverter.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Currency Converter" Height="350" Width="500">
+
+    <Grid Margin="10">
+        <Label Content="Enter amount in dollars:" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtAmount" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,20,0,0"/>
+
+        <Label Content="Select currency to convert to:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0,50,0,0"/>
+        <ComboBox x:Name="cmbCurrency" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="10,70,0,0">
+            <ComboBoxItem Content="Euro (EUR)"/>
+            <ComboBoxItem Content="British Pound (GBP)"/>
+            <ComboBoxItem Content="Japanese Yen (JPY)"/>
+            <ComboBoxItem Content="Australian Dollar (AUD)"/>
+            <ComboBoxItem Content="Canadian Dollar (CAD)"/>
+            <ComboBoxItem Content="Mexican Peso (MXN)"/>
+        </ComboBox>
+
+        <Button Content="Convert" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,100,0,0" Click="Convert_Click"/>
+        <Button Content="Clear" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="100,100,0,0" Click="Clear_Click"/>
+
+        <Label x:Name="lblResult" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,130,0,0"/>
+        <Image HorizontalAlignment="Left" Height="53" Margin="187,10,0,0" VerticalAlignment="Top" Width="67"/>
+        <Image HorizontalAlignment="Left" Height="61" Margin="375,10,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/AUD.JPG"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="240,50,0,0" VerticalAlignment="Top" Width="100"/>
+        <Image HorizontalAlignment="Left" Height="78" Margin="275,11,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/CAD.JPG"/>
+        <Image HorizontalAlignment="Left" Height="56" Margin="375,71,0,0" VerticalAlignment="Top" Width="95" Source="/Assets/Euros.JPG"/>
+        <Image HorizontalAlignment="Left" Height="85" Margin="275,89,0,0" VerticalAlignment="Top" Width="101" Source="/Assets/Pesos.JPG"/>
+        <Image HorizontalAlignment="Left" Height="54" Margin="371,0,0,0" VerticalAlignment="Center" Width="100" Source="/Assets/Pounds.JPG"/>
+        <Image HorizontalAlignment="Left" Height="54" Margin="275,174,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/Yen.JPG"/>
+    </Grid>
+</Window>
